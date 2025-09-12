@@ -1,11 +1,7 @@
-
-
 > 参考地址
 > https://dev.to/vinomanick/create-a-monorepo-using-pnpm-workspace-1ebn
 
 # 初始化
-
-
 
 ## GIT 篇
 
@@ -22,13 +18,14 @@ ssh-keygen -t rsa -b 4096 -C "you@github.com" -f ~/.ssh/id_rsa_github
 ```
 
 2. 配置不同的ssh规则
+
    ```
    # 公司仓库
    Host company-git
      HostName git.company.com
      User git
      IdentityFile ~/.ssh/id_rsa_company
-   
+
    # GitHub
    Host github
      HostName github.com
@@ -37,13 +34,15 @@ ssh-keygen -t rsa -b 4096 -C "you@github.com" -f ~/.ssh/id_rsa_github
    ```
 
 3. 测试联通性
+
    ```ssh
    # 测试公司仓库
    ssh -T git@company-git
-   
+
    # 测试 GitHub
    ssh -T git@github
    ```
 
-   
+注意：git@github.com:ShawKevin/kevin-workspace.git
 
+git@github.com 需要改为github也就是上面 Host的别名 添加ssh-add ~/.ssh/id_rsa_github
