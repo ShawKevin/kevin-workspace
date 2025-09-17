@@ -3,6 +3,8 @@
 
 # 初始化
 
+`pnpm common build --watch` 持续监听 common 包
+
 ## GIT 篇
 
 `git 路径 ～/.ssh`
