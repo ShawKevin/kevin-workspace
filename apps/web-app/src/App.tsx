@@ -1,15 +1,9 @@
-import { isBlank, log } from 'common';
+import { log } from 'common';
+import RouterLayout from './layout/RouterLayout';
 
 const App = () => {
   log();
-  return (
-    <>
-      <p>undefined isBlank - {isBlank(undefined) ? 'true' : 'false'}</p>
-      <p>false isBlank - {isBlank(false) ? 'true' : 'false'}</p>
-      <p>true isBlank - {isBlank(true) ? 'true' : 'false'}</p>
-      <p>Empty object isBlank - {isBlank({}) ? 'true' : 'false'}</p>
-    </>
-  );
+  return <RouterLayout />;
 };
 
 export default App;

@@ -22,4 +22,10 @@ export default defineConfig([
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   eslintPluginPrettierRecommended,
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      'react/react-in-jsx-scope': 'off',
+    },
+  },
 ]);
